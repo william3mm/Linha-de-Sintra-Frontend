@@ -1,10 +1,23 @@
 import Layout from "./components/Layout"
-// import {Login} from "./pages/Login"
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Products from "./pages/Products";
+import Profile from "./pages/Profile";
+import { Home } from "./pages/Home";
+
 function App() {
 
   return (
     //<Login/>
-    <Layout/>
+    <Router>
+    <div>
+        <Routes>
+            <Route path="/"  element={<Layout children={<Home/>}/>} />
+            <Route path="/produtos" element={<Products/>} />
+            <Route path="/perfil" element={<Profile/>} />
+    {/* <Layout>Home</Layout> */}
+        </Routes>
+    </div>
+</Router>
   )
 }
 
