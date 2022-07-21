@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-white text-white lg:min-h-full md:min-h-full sm:min-h-full overflow-hidden
+}
