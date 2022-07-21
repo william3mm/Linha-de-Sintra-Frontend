@@ -18,7 +18,9 @@ const Sidebar: React.FC = () => {
   const onMouseOver = () => {
     setIsCollapseble(!IsCollapseble);
   }
-
+const cleaLocation = () =>{
+  window.location.pathname = "";
+}
   const handleSidebarToggle = () => {
     setToogleSidebarCollapse(!toogleSidebarCollapse)
   }
@@ -74,7 +76,10 @@ const Sidebar: React.FC = () => {
         </div>
         {toogleSidebarCollapse && (
           <span className='text-lg font-medium text-gray-500'>
-            Logout
+              
+            <Link to="/login">
+              Logout
+            </Link>
           </span>
         )}
       </div>
