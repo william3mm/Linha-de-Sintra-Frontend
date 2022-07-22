@@ -25,7 +25,7 @@ const cleaLocation = () =>{
     setToogleSidebarCollapse(!toogleSidebarCollapse)
   }
   const collapseSidebarClass = toogleSidebarCollapse ? `mt-2 text-lg font-medium text-blue-200 ` : `mt-2 text-lg font-medium text-blue-200 hidden `;
-  const wrapperSidebarClass = toogleSidebarCollapse ? `h-screen px-4  pt-8 pb-4 bg-white flex flex-col justify-between border border-dashed w-80` : `h-screen px-4  pt-8 pb-4 bg-white flex flex-col border border-dashed w-20`;
+  const wrapperSidebarClass = toogleSidebarCollapse ? `h-screen px-4  pt-8 pb-4 bg-white flex flex-col justify-between border  w-80` : `h-screen px-4  pt-8 pb-4 bg-white flex flex-col border border-dashed w-20`;
   const router = window.location;
   const activeMenu = useMemo(() => menuItems.find(menu => menu.link === router.pathname), [router.pathname])
   const getNavItemClasses = (menu: menuItems | {}) => {
@@ -33,11 +33,11 @@ const cleaLocation = () =>{
   }
 
   return (
-    <div className={`${wrapperSidebarClass} ease-in-out duration-300`} onMouseEnter={onMouseOver} onMouseLeave={onMouseOver}>
+    <div className={`${wrapperSidebarClass} ease-in-out duration-300 border-r border-gray-100`} onMouseEnter={onMouseOver} onMouseLeave={onMouseOver}>
       <div className=' flex flex-col'>
         <div className='flex items-center justify-between relative'>
-          <div className='flex items-center pl-1 gap-4 text-gray-700'>
-            Logo
+          <div className={`flex items-center pl-1 gap-4 text-[#6C8CF5] text-lg font-extrabold ${!toogleSidebarCollapse? "hidden":""}`}>
+          Logotipo 
             <span className={collapseSidebarClass}>
             </span>
           </div>

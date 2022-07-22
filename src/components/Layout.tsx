@@ -9,7 +9,7 @@ const Layout: React.FC<props> = ({children}) => {
     return (
         <div className='h-screen flex justify-start'>
             <Sidebar />
-            <div className='bg-sky-500 flex-1 p-4 text-white border border-dashed'>
+            <div className='bg-white flex-1 p-4 text-white  '>
                 {children}
             </div>
         </div>
