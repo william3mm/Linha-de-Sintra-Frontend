@@ -7,8 +7,8 @@ export function Login() {
 
     return (
         <div className='w-full flex items-center mx-auto  h-screen'>
-            <div className='bg-gradient-to-b from-[#233B62] to-[#bdcaf7] flex-auto h-screen'>
-                <div className='flex flex-col items-center flex-1 h-full pl-20 '>
+            <div className='bg-[#6C8CF5] flex-auto h-screen'>
+                {/* <div className='flex flex-col items-center flex-1 h-full pl-20 '>
                     <header className='self-baseline pb-20 pt-10 text-xl w-full capitalize ml-4'>
                         Uma ferramenta única para vender
                     </header>
@@ -22,7 +22,7 @@ export function Login() {
                             <img src={img2} alt="" className=' -rotate-[25deg]   w-[600px] h-96 relative -top-16' />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className='h-full w-5/12 flex flex-col gap-8 items-center'>
                 <div>

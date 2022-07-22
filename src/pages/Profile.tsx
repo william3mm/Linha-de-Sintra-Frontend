@@ -14,7 +14,7 @@ const Profile: React.FC = () => {
           </header>
         </div>
         <div className='flex items-center mt-8'>
-          <form action="" className='w-4/5 mt-3'>
+          <form action="" className='w-4/6 mt-3'>
             <div className='flex flex-col gap-8'>
               <span className='flex flex-col text-gray-500'>
                 <label htmlFor="nome" className='font-semibold mb-2 ml-1'>Nome de usuário </label>
