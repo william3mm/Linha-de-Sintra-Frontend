@@ -3,6 +3,10 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "author": {
+        "name": "Francisco Correia",
+        "email": "francisco.correia1804@gmail.com"
+    },
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
