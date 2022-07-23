@@ -45,6 +45,11 @@ const columns: TableColumn<DataRow>[] = [
         selector: row => row.qtd,
         sortable: true,
     },
+    {
+        name: 'Categoria',
+        selector: row => row.category,
+        sortable: true,
+    },
 ];
 
 const paginationOptions = {
@@ -54,6 +59,27 @@ const paginationOptions = {
     selectAllRowsItemText:"todos"
 
 }
+const dataTableStyle = {
+    rows: {
+        style: {
+            minHeight: '72px', // override the row height
+            
+        },
+    },
+    headCells: {
+        style: {
+            paddingLeft: '8px', // override the cell padding for head cells
+            paddingRight: '8px',
+        },
+    },
+    cells: {
+        style: {
+            paddingLeft: '8px', // override the cell padding for data cells
+            paddingRight: '8px',
+            font:"blue"
+        },
+    },
+};
 export const DataTableComponent: React.FC = () => {
     return <DataTable 
     pagination 
@@ -63,5 +89,7 @@ export const DataTableComponent: React.FC = () => {
     title="Produtos"
     paginationComponentOptions={paginationOptions}
     highlightOnHover={true}
+    customStyles={dataTableStyle}
+    theme="solarized"
     />;
 };
