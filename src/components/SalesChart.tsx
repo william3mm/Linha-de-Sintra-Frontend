@@ -27,23 +27,23 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Bar Chart',
+      text: 'Grafico de vendas',
     },
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
+      label: 'Vendas 1',
       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },
     {
-      label: 'Dataset 2',
+      label: 'Vendas 2',
       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
@@ -52,7 +52,7 @@ export const data = {
 
 export function SalesChart() {
   return(
-    <div className='h-full bg-green-50'>
+    <div className='h-full'>
         <Bar options={options} data={data} />
     </div>
     );

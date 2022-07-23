@@ -31,7 +31,7 @@ export function Home() {
                     </div>
 
                     <div>
-                    <p className="pt-2 text-2xl ">Total encomendas</p>
+                    <p className="pt-2 text-2xl pr-1">Total encomendas</p>
                     <strong className="text-4xl py-4 block">3482 </strong>
                     </div>
 
@@ -57,7 +57,7 @@ export function Home() {
                 </div>
             </div>
 
-            <div className="h-full p-4 bg-slate-50 rounded-lg py-8 mt-8">
+            <div className="h-full p-4 bg-green-50 rounded-lg py-8 mt-8">
                 <SalesChart/>
             </div>
         </div>
