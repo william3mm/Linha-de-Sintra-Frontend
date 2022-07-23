@@ -6,15 +6,15 @@ import Layout from '../components/Layout';
 const Profile: React.FC = () => {
   return (
     <Layout>
-      <div className='h-screnn flex flex-col gap-4 text-gray-900 p-4 '>
-        <div>
+      <div className='w-4/5 m-auto'>
+        <div className='m-auto'>
           <header className='py-4 px-2'>
             <h1 className='text-2xl font-normal text-[#6C8CF5]'>Definições Gerais</h1>
             <span className='text-slate-400 mt-2 ml-2 block'>Atualize aqui os seus dados</span>
           </header>
         </div>
-        <div className='flex items-center mt-8'>
-          <form action="" className='w-4/6 mt-3'>
+        <div className='w-4/5  mt-8'>
+          <form action="">
             <div className='flex flex-col gap-8'>
               <span className='flex flex-col text-gray-500'>
                 <label htmlFor="nome" className='font-semibold mb-2 ml-1'>Nome de usuário </label>
@@ -42,6 +42,7 @@ const Profile: React.FC = () => {
           </form>
         </div>
       </div>
+
     </Layout>);
 }
 

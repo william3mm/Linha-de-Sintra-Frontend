@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    @apply h-full bg-slate-50
+}
 body{
-    @apply bg-white text-white lg:min-h-full md:min-h-full sm:min-h-full overflow-hidden
+    @apply h-full text-slate-800 lg:min-h-full md:min-h-full sm:min-h-full overflow-hidden
+
 }
