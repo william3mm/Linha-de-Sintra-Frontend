@@ -44,7 +44,7 @@ export function Login() {
 
                             <input type="text" name="" id="" className='bg-[#F7F7F7] text-[#656565] p-4 rounded' placeholder='Telefone'/>
                             <input type="password" name="" id="" className='bg-[#F7F7F7] text-[#656565] w-96 p-4 rounded' placeholder='Password'/>
-                            <span className='text-indigo-400 hover:text-indigo-900 text-end'>esqueceu a senha?</span>
+                            <span className='text-indigo-400 hover:text-indigo-900 text-end cursor-pointer'>esqueceu a senha?</span>
                             <button
                                 type="button"
                                 className="font-medium text-white bg-[#6C8CF5] p-4 rounded"
