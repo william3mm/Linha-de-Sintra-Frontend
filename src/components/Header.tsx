@@ -29,8 +29,6 @@ function classNames(...classes:string[]) {
 export function Header() {
   return (
     <>
-       
-     
         <Disclosure as="nav" className="bg-[#6C8CF5] py-2 ">
           {({ open } ) => (
             <>

@@ -1,6 +1,6 @@
-import { ArrowsInCardinal, CaretDoubleLeft, Gear, GearSix, IconContext, Queue, ShoppingCartSimple, SignIn, SignOut, SimCard, SlackLogo, Stack, XCircle } from 'phosphor-react';
+import { CaretDoubleLeft, GearSix, ShoppingCartSimple, SignOut, Stack } from 'phosphor-react';
 import React, { useState, useMemo } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 type menuItems = {
   id: number,
   label: string,
@@ -28,8 +28,8 @@ const cleaLocation = () =>{
   const wrapperSidebarClass = toogleSidebarCollapse ? `h-screen px-4  pt-8 pb-4 bg-white flex flex-col justify-between border  w-80` : `h-screen px-4  pt-8 pb-4 bg-white flex flex-col justify-between border border-dashed w-20`;
   const router = window.location;
   const activeMenu = useMemo(() => menuItems.find(menu => menu.link === router.pathname), [router.pathname])
-  const getNavItemClasses = (menu: menuItems | {}) => {
-    return `text-black flex items-center cursor-pointer hover:bg-slate-100 rounded w-full overflow-hidden whitespace-nowrap ${activeMenu?.id === menu.id ? "bg-slate-100" : ""}`;
+  const getNavItemClasses = (menu?: menuItems ) => {
+    return `text-black flex items-center cursor-pointer hover:bg-slate-100 rounded w-full overflow-hidden whitespace-nowrap ${activeMenu?.id === menu?.id ? "bg-slate-100" : ""}`;
   }
 
   return (
@@ -75,7 +75,7 @@ const cleaLocation = () =>{
         </div>
       </div>
 
-      <div className={`${getNavItemClasses({})} px-3 py-4`}>
+      <div className={`${getNavItemClasses()} px-3 py-4`}>
         <div className='text-gray-600 w-10'>
           {/* <Stack size={20} /> */}
           <SignOut size={25} />

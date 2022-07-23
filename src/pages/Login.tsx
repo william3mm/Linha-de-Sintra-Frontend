@@ -1,6 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
-//import { XIcon } from '@heroicons/react/outline'
-
 import img1 from '../assets/img/img1.png'
 import img2 from '../assets/img/img2.png'
 export function Login() {
