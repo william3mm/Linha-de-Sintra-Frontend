@@ -38,12 +38,12 @@ export function Login() {
                         </p>
                     </header>
                 </div>
-                <div className='flex items-center'>
+                <div className='w-3/4'>
                     <form action="">
                         <div className='flex flex-col gap-4'>
 
-                            <input type="text" name="" id="" className='bg-[#F7F7F7] text-[#656565] p-4 rounded' placeholder='Telefone'/>
-                            <input type="password" name="" id="" className='bg-[#F7F7F7] text-[#656565] w-96 p-4 rounded' placeholder='Password'/>
+                            <input type="text" name="" id="telefone" className='bg-[#F7F7F7] text-[#656565] p-4 rounded' placeholder='Telefone'/>
+                            <input type="password" name="" id="password" className='bg-[#F7F7F7] text-[#656565]  p-4 rounded' placeholder='Password'/>
                             <span className='text-indigo-400 hover:text-indigo-900 text-end cursor-pointer'>esqueceu a senha?</span>
                             <button
                                 type="button"

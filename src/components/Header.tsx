@@ -54,7 +54,7 @@ export function Header() {
                             className={classNames(
                               item.current
                                 ? 'bg-white '
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                : 'text-gray-300 hover:bg-white hover:text-[#6C8CF5]',
                               'px-3 py-2 rounded-md text-base font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -100,7 +100,7 @@ export function Header() {
                                     href={item.href}
                                     className={classNames(
                                       active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
+                                      'block px-4 py-2 text-sm text-[#6C8CF5]'
                                     )}
                                   >
                                     {item.name}
