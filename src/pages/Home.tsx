@@ -1,9 +1,8 @@
 
 //import { XIcon } from '@heroicons/react/outline'
 
-import { HomeIcon } from "@heroicons/react/outline";
-import { AppleLogo, Bag, House, HouseLine, HouseSimple, ShoppingCart, ShoppingCartSimple } from "phosphor-react";
-import Layout from "../components/Layout";
+import { Bag, HouseLine, ShoppingCart } from "phosphor-react";
+import { SalesChart } from "../components/SalesChart";
 
 export function Home() {
 
@@ -56,6 +55,10 @@ export function Home() {
                     <p  className=" text-lg">vendas por mês</p>
                     </div>
                 </div>
+            </div>
+
+            <div className="h-full p-4 bg-slate-50 rounded-lg py-8 mt-8">
+                <SalesChart/>
             </div>
         </div>
     )

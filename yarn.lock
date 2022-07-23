@@ -312,6 +312,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@types/faker@5.5.3":
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-5.5.3.tgz#80978e52862e5df9e7a96befdfdd8fad882f6350"
+  integrity sha512-InxkM6sCFQTI6YQl29M/XGlO19ecv/EHH5X5zLEFdge2/qya8oIT0XkJUKTqheVYWJtGi+FBAfP7hbbunDiOmg==
+
 "@types/node@^18.0.6":
   version "18.0.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.6.tgz#0ba49ac517ad69abe7a1508bc9b3a5483df9d5d7"
@@ -673,6 +678,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
+
+faker@5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-5.5.3.tgz#c57974ee484431b25205c2c8dc09fda861e51e0e"
+  integrity sha512-wLTv2a28wjUyWkbnX7u/ABZBkUkIF2fCd73V6P2oFqEGEktDfzWx4UxrSqtPRw0xPRAcjeAOIiJWqZm3pP4u3g==
 
 fast-glob@^3.2.11:
   version "3.2.11"

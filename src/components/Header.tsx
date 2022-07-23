@@ -32,7 +32,7 @@ export function Header() {
     <>
        
      
-        <Disclosure as="nav" className="bg-[#6C8CF5] py-2">
+        <Disclosure as="nav" className="bg-[#6C8CF5] py-2 ">
           {({ open } ) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ export function Header() {
                               item.current
                                 ? 'bg-white '
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                              'px-3 py-2 rounded-md text-base font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
